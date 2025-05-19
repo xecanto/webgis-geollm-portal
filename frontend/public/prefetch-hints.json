@@ -1,0 +1,36 @@
+[
+  {
+    "rel": "preload",
+    "href": "/earth-grid.svg",
+    "as": "image",
+    "type": "image/svg+xml"
+  },
+  {
+    "rel": "preload", 
+    "href": "/globe-visualization.svg",
+    "as": "image",
+    "type": "image/svg+xml"
+  },
+  {
+    "rel": "dns-prefetch",
+    "href": "https://fonts.googleapis.com"
+  },
+  {
+    "rel": "dns-prefetch",
+    "href": "https://fonts.gstatic.com"
+  },
+  {
+    "rel": "dns-prefetch",
+    "href": "https://randomuser.me"
+  },
+  {
+    "rel": "preconnect",
+    "href": "https://fonts.googleapis.com",
+    "crossorigin": true
+  },
+  {
+    "rel": "preconnect",
+    "href": "https://fonts.gstatic.com",
+    "crossorigin": true
+  }
+]

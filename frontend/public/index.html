@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoLLM - Geospatial Intelligence Powered by AI</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="GeoLLM - Geospatial Intelligence Powered by AI">
+  <meta name="description" content="Unlock the potential of geospatial data with GeoLLM's advanced mapping and analysis tools. Transform complex geographic information into actionable insights.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://geollm.com/">
+  <meta property="og:title" content="GeoLLM - Geospatial Intelligence Powered by AI">
+  <meta property="og:description" content="Unlock the potential of geospatial data with GeoLLM's advanced mapping and analysis tools.">
+  <meta property="og:image" content="https://geollm.com/images/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://geollm.com/">
+  <meta property="twitter:title" content="GeoLLM - Geospatial Intelligence Powered by AI">
+  <meta property="twitter:description" content="Unlock the potential of geospatial data with GeoLLM's advanced mapping and analysis tools.">
+  <meta property="twitter:image" content="https://geollm.com/images/twitter-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <!-- Preconnect to required origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" href="/earth-grid.svg" as="image">
+  <link rel="preload" href="/fonts/customfont.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <!-- Structured data -->
+  <script type="application/ld+json" src="/structured-data.json"></script>
+  
+  <!-- Critical CSS -->
+  <style>
+    /* Inline critical CSS here */
+    :root {
+      --primary-color: #1A936F;
+      --secondary-color: #F4D35E;
+      --background-color: #1B263B;
+      --text-color: #F0F3BD;
+    }
+    
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    
+    .loading {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--background-color);
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <!-- Initial loading state -->
+  <div class="loading" id="initial-loader">
+    <div style="text-align: center;">
+      <div style="display: inline-block; width: 48px; height: 48px; border-radius: 50%; border: 3px solid; border-color: #1A936F #1A936F transparent transparent; animation: spin 1s linear infinite;"></div>
+      <p>Loading GeoLLM...</p>
+    </div>
+  </div>
+  
+  <div id="app"></div>
+  
+  <script>
+    // Remove loader once page is loaded
+    window.addEventListener('load', function() {
+      document.getElementById('initial-loader').style.display = 'none';
+    });
+  </script>
+  <script src="/app.js" defer></script>
+</body>
+</html>

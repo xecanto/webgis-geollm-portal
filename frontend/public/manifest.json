@@ -1,0 +1,37 @@
+{
+  "name": "GeoLLM - Geospatial Intelligence",
+  "short_name": "GeoLLM",
+  "description": "Advanced geospatial analysis powered by AI, making earth observation data accessible and actionable.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1B263B",
+  "theme_color": "#1A936F",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities", "maps", "data"],
+  "orientation": "any",
+  "screenshots": [
+    {
+      "src": "/screenshots/homepage.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/screenshots/dashboard.jpg", 
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    }
+  ]
+}
